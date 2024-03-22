@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 70px;
+            color: transparent;
+            text-shadow: 1px 1px black;
+        }
+        a{
+            font-size: 40px;
+            text-decoration: none;
+            position: relative;
+        }
+        a::after{
+            content: "";
+            position: absolute;
+            width:0;
+            height: 5px;
+            left: 50%;
+            bottom:0;
+            background-color: black;
+            transform: translateX(-50%);
+            transform-origin: 50%;
+            transition: .5s;
+        }
+        a:hover::after{
+            width: 100%;
+        }
+        .drop-down{
+            /* position: relative; */
+            display: inline-block;
+        }
+        .dropdown-content{
+            position: absolute;
+            display: none;
+            /* background-color: black; */
+            /* color: white; */
+            /* z-index: 1; */
+            /* width: 160px; */
+            text-align: center;
+            width: 150px;
+        }
+        .dropdown-content li{
+            /* display: block;
+            padding: 10px;
+            text-align: center; */
+        }
+        .drop-down:hover .dropdown-content{
+            display: block;
+        }
+        .drop-down a{
+            color: red;
+        }
+        .dropdown-content li{
+            display: block;
+            list-style-type: none;
+            font-size: 25px;
+            text-align: center;
+            background-color: aliceblue;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FATAHI</h1>
+
+    <a href="">webkit</a>
+    <p class="when"></p>
+
+    <div class="drop-down">
+        <a href="" class="dropdown-btn">HOME</a>
+        <div class="dropdown-content">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+        </div>
+    </div>
+    <h1 id="bem"></h1>
+    <script>
+        let c = 7 % 4;
+        console.log(c);
+        document.write(7+8);
+        // alert('im here');
+        // document.getElementsByClassName("when").innerHTML = 5 + 6;
+        // document.querySelector('.when').innerHTML =4
+    let myProgress = true;
+    console.log(typeof(myProgress));
+    .document.getElementById("bem").innerHTML=  console.log(typeof(myProgress));
+
+    </script>
+</body>
+</html>
